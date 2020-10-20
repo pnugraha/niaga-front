@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Niaga</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/blog/">
+    <!-- Bootstrap core CSS -->
+	<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .justify-content-end .text-muted{
+        padding-left: 10px;
+      }
+      .row .col-md-12 h2{
+        padding: 30px 0 30px 0 !important;
+      }
+      .pt-1 > a.text-muted{
+        font-size: 12px;
+      }
+      .col-md-6 > p.lead{
+        font-size: 30px;
+        font-weight: 500;
+        color: #868686;
+        line-height: 35px;
+      }
+      ul {
+        list-style-image: url('assets/icons/check-circle-fill.svg');
+        padding-left: 20px;
+      }
+      ul li {
+        line-height: 30px;
+      }
+      big{
+        font-size: 50px;
+      }
+      bg-primary > big {
+        color: white !important;
+      }
+      .card-body > button {
+        font-weight: bold;
+        font-size: 16px;
+        border: 3px solid;
+      }
+      .card-deck .card {
+        margin: 0;
+      }
+      .btn{
+        border: 3px solid;
+      }
+      .nb{
+        font-size: 12px;
+        padding-bottom: 20px;
+        display: block;
+      }
+      .footer {
+          font-size: 13px;
+          padding: 100px 5% 24px;
+          background: #333;
+          color: #c4c4c4;
+      }
+      .footer .footer__column-title {
+          font-family: NunitoSansBold,sans-serif;
+          font-size: 20px;
+          font-weight: 700;
+          margin-bottom: 40px;
+      }
+      .footer ul.footer__menu-list {
+          list-style-image: none;
+          list-style-type: none;
+          padding-left: 0px;
+      }
+      .footer ul.footer__menu-list li {
+          line-height: 20px !important;
+      }
+      .footer ul.footer__menu-list li a {
+          color: white;
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <header class="blog-header py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="col-6 pt-1">
+            <a class="text-muted" href="#">
+        			<svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-bookmark-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        			  <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm4.16 4.1a.178.178 0 0 0-.32 0l-.634 1.285a.178.178 0 0 1-.134.098l-1.42.206a.178.178 0 0 0-.098.303L6.58 6.993c.042.041.061.1.051.158L6.39 8.565a.178.178 0 0 0 .258.187l1.27-.668a.178.178 0 0 1 .165 0l1.27.668a.178.178 0 0 0 .257-.187L9.368 7.15a.178.178 0 0 1 .05-.158l1.028-1.001a.178.178 0 0 0-.098-.303l-1.42-.206a.178.178 0 0 1-.134-.098L8.16 4.1z"/>
+        			</svg>
+        			Gratis E-Book 9 Cara Menggunakan Domain
+        		</a>
+          </div>
+          <div class="col-6 d-flex justify-content-end align-items-center">
+            <a class="text-muted" href="#" aria-label="Search">
+              <svg width="1em" height="1em" viewBox="0 0 16 20" class="bi bi-telephone-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        			<path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"/>
+        			</svg>
+        			0274-5305455
+        		</a>
+            <a class="text-muted" href="#" aria-label="Search">
+        			<svg width="1em" height="1em" viewBox="0 0 16 20" class="bi bi-chat-text-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        			  <path fill-rule="evenodd" d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM4.5 5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7zm0 2.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7zm0 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+        			</svg>
+        			Live Chat
+        		</a>
+        		<a class="text-muted" href="#" aria-label="Search">
+        			<svg width="1.4em" height="1.4em" viewBox="0 0 16 16" class="bi bi-person-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        			  <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"/>
+        			  <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+        			  <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/>
+        			</svg>
+        			Member Area
+        		</a>
+          </div>
+        </div>
+      </header>
+      <div class="row">
+      	<nav class="navbar navbar-expand-lg navbar-light w-100" id="header-navbar">
+      		<a class="navbar-brand font-weight-bold" href="index.html">
+      			<img src="assets/images/logo-niagahoster.png" width="200px">
+      		</a> 
+      		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+      			<ul class="navbar-nav ml-auto">
+      				<li class="nav-item"><a class="nav-link font-weight-bold" data-toggle="none" href="#">Hosting</a></li>
+      				<li class="nav-item"><a class="nav-link font-weight-bold" data-toggle="none" href="#">Domain</a></li>
+      				<li class="nav-item"><a class="nav-link font-weight-bold" data-toggle="none" href="#">Server</a></li>
+      				<li class="nav-item"><a class="nav-link font-weight-bold" data-toggle="none" href="#">Website</a></li>
+      				<li class="nav-item"><a class="nav-link font-weight-bold" data-toggle="none" href="#">Afiliasi</a></li>
+              <li class="nav-item"><a class="nav-link font-weight-bold" data-toggle="none" href="#">Promo</a></li>
+              <li class="nav-item"><a class="nav-link font-weight-bold" data-toggle="none" href="#">Pembayaran</a></li>
+              <li class="nav-item"><a class="nav-link font-weight-bold" data-toggle="none" href="#">Review</a></li>
+              <li class="nav-item"><a class="nav-link font-weight-bold" data-toggle="none" href="#">Kontak</a></li>
+              <li class="nav-item"><a class="nav-link font-weight-bold" data-toggle="none" href="#">Blog</a></li>
+      			</ul>
+      		</div>
+      	</nav>
+      </div>
+
+      <div class="row pb-4">
+        <div class="col-md-6 px-0">
+          <h1 class="display-5 font-weight-bold">PHP Hosting</h1>
+          <p class="lead my-3">Cepat, handal, penuh dengan modul PHP yang Anda butuhkan.</p>
+          <ul>
+            <li>Solusi PHP untuk performa query yang lebih cepat.</li>
+            <li>Konsumsi memori yang lebih rendah.</li>
+            <li>Support PHP 5.3, 5.4, 5.5, 5.6, 5.7, dan 7.</li>
+            <li>Fitur enkripsi IonCUbe dan Zend Guard Loader.</li>
+          </ul>
+        </div>
+        <div class="col-md-6 px-0">
+          <img src="assets/svg/illustration banner PHP hosting-01.svg" width="80%">
+        </div>
+      </div>
+
+      <div class="row pb-4">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <div class="row pb-4 text-center d-flex flex-wrap align-items-center">
+            <div class="col-md-4 align-middle">
+              <img src="assets/svg/icon PHP Hosting_zendguard.svg" width="200px" class="align-middle">
+              <p class="align-text-bottom" style="display: inline;">Zend Guard</p>
+            </div>
+            <div class="col-md-4 align-middle">
+              <img src="assets/svg/icon PHP Hosting_composer.svg" width="150px">
+              <p class="align-text-bottom">Composer</p>
+            </div>
+            <div class="col-md-4 align-middle">
+              <img src="assets/svg/icon PHP Hosting_ioncube.svg" width="200px">
+              <p class="align-text-bottom">IonCube</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+
+      <div class="row pb-4">
+        <div class="col-md-12 text-center">
+          <h2>Paket Hosting Singapura yang Tepat</h2>
+          <p>DIskon 40% + Domain dan SSL Gratis untuk Anda</p>
+        </div>
+      </div>
+
+      <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Bayi</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title" style="text-decoration: line-through;">Rp 19.000</h5>
+            <h5 class="card-title pricing-card-title">Rp <big class="text-muted">14</big>.000 / bulan</h5>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>983</strong> Pengguna Terdaftar</li>
+            <li class="list-group-item">
+              <ul class="list-unstyled mt-3 mb-4">
+                <li><strong>10 users</strong> included</li>
+                <li><strong>2 GB</strong> of storage</li>
+                <li>Email support</li>
+                <li>Help center access</li>
+              </ul>
+            </li>
+          </ul>
+          <div class="card-body">
+            <button type="button" class="btn btn-lg btn-outline-secondary" style="border-radius: 50px;">Pilih Sekarang</button>
+          </div>
+        </div>
+
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Pelajar</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title" style="text-decoration: line-through;">Rp 46.000</h5>
+            <h5 class="card-title pricing-card-title">Rp <big class="text-muted">23</big>.000 / bulan</h5>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>4.231</strong> Pengguna Terdaftar</li>
+            <li class="list-group-item">
+              <ul class="list-unstyled mt-3 mb-4">
+                <li><strong>10 users</strong> included</li>
+                <li><strong>2 GB</strong> of storage</li>
+                <li>Email support</li>
+                <li>Help center access</li>
+              </ul>
+            </li>
+          </ul>
+          <div class="card-body">
+            <button type="button" class="btn btn-lg btn-outline-secondary" style="border-radius: 50px;">Pilih Sekarang</button>
+          </div>
+        </div>
+
+        <div class="card mb-4 box-shadow text-white bg-primary">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Personal</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title" style="text-decoration: line-through;">Rp 58.000</h5>
+            <h5 class="card-title pricing-card-title">Rp <big class="text-white">38</big>.000 / bulan</h5>
+          </div>
+          <ul class="list-group list-group-flush ">
+            <li class="list-group-item text-white bg-primary"><strong>12.754</strong> Pengguna Terdaftar</li>
+            <li class="list-group-item text-secondary">
+              <ul class="list-unstyled mt-3 mb-4">
+                <li><strong>10 users</strong> included</li>
+                <li><strong>2 GB</strong> of storage</li>
+                <li>Email support</li>
+                <li>Help center access</li>
+              </ul>
+            </li>
+          </ul>
+          <div class="card-body bg-white">
+            <button type="button" class="btn btn-lg btn-outline-primary text-white bg-primary" style="border-radius: 50px;">Pilih Sekarang</button>
+          </div>
+        </div>
+
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Bisnis</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title" style="text-decoration: line-through;">Rp 109.000</h5>
+            <h5 class="card-title pricing-card-title">Rp <big class="text-muted">65</big>.000 / bulan</h5>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>65.866</strong> Pengguna Terdaftar</li>
+            <li class="list-group-item">
+              <ul class="list-unstyled mt-3 mb-4">
+                <li><strong>10 users</strong> included</li>
+                <li><strong>2 GB</strong> of storage</li>
+                <li>Email support</li>
+                <li>Help center access</li>
+              </ul>
+            </li>
+          </ul>
+          <div class="card-body">
+            <button type="button" class="btn btn-lg btn-outline-secondary" style="border-radius: 50px;">Pilih Sekarang</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row pb-4">
+        <div class="col-md-12 text-center">
+          <h2>Powerful dengan Limit PHP yang lebih besar</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <table class="table table-striped">
+                <tbody>
+                  <tr>
+                    <th scope="row"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+</svg></th>
+                    <td>max execute time 300s</td>                    
+                  </tr>
+                  <tr>
+                    <th scope="row"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+</svg></th>
+                    <td>max execute time 300s</td>                    
+                  </tr>
+                  <tr>
+                    <th scope="row"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+</svg></th>
+                    <td>php memory limit 1024 mb</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-md-6">
+              <table class="table table-striped">
+                <tbody>
+                  <tr>
+                    <th scope="row"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+</svg></th>
+                    <td>post max size 128 mb</td>                    
+                  </tr>
+                  <tr>
+                    <th scope="row"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+</svg></th>
+                    <td>upload max filesize 128 mb</td>                    
+                  </tr>
+                  <tr>
+                    <th scope="row"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+</svg></th>
+                    <td>max var input 2500</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row pb-4">
+        <div class="col-md-12 text-center">
+          <h2>Semua Paket Hosting Sudah Termasuk</h2>
+          <div class="row pb-4">
+            <div class="col-md-4 text-center">
+              <img src="assets/svg/icon PHP Hosting_PHP Semua Versi.svg" width="80px">
+              <h5>PHP semua versi</h5>
+              <p class="m-0">Pilih mulai dari versi 5.3 s/d 7. Ubah sesuka Anda.</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <img src="assets/svg/icon PHP Hosting_My SQL.svg" width="80px">
+              <h5>MySQL Versi 5.6</h5>
+              <p class="m-0">Nikmati MySQL versi terbaru, terbaru, dan kaya akan fitur</p>              
+            </div>
+            <div class="col-md-4 text-center">
+              <img src="assets/svg/icon PHP Hosting_CPanel.svg" width="80px">
+              <h5>Panel Hosting C-Panel</h5>
+              <p class="m-0">Kelola website dengan panel canggih yang familiar di hati Anda.</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <img src="assets/svg/icon PHP Hosting_garansi uptime.svg" width="80px">
+              <h5>Garansi Uptime 99.99%</h5>
+              <p class="m-0">Data center yang mendukung website Anda 24/7</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <img src="assets/svg/icon PHP Hosting_InnoDB.svg" width="80px">
+              <h5>Database InnoDB Unlimited</h5>
+              <p class="m-0">Jumlah dan ukuran database yang tumbuh sesuai dengan kebutuhan Anda.</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <img src="assets/svg/icon PHP Hosting_My SQL remote.svg" width="80px">
+              <h5>Wildcare Remote MySQL</h5>
+              <p class="m-0">Mendukung s/d 24 user_max_connection dan 100 max_connection</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row pb-4">
+        <div class="col-md-12 text-center">
+          <h2>Mendukung Penuh Framework Laravel</h2>
+        </div>
+        <div class="col-md-6 px-0">
+          <span class="lead my-3">Tidak perlu menggunakan dedicated server atau VPS yang mahal. Layanan PHP Hosting murah kami mendukung framework favorit Anda.</span>
+          <ul>
+            <li>Install Laravel <stong>1 klik</stong> dengan Softacolus Installer.</li>
+            <li>Mendukung Ekstensi <stong>PHP MyCrypt, phar, mbstring, json</stong> dan <stong>fileinfo</stong>.</li>
+            <li>Tersedia <stong>Composer</stong> dan <stong>SSH</stong> untuk menginstall package pilihan Anda.</li>
+          </ul>
+          <span class="nb">Nb. Composer dan SSH hanya terdapat di paket personal dan bisnis</span>
+          <button type="button" class="btn btn-lg btn-outline-primary text-white bg-primary" style="border-radius: 50px;">Pilih Hosting Anda</button>
+        </div>
+        <div class="col-md-6 px-0">
+          <img src="assets/svg/illustration banner support laravel hosting.svg" width="80%">
+        </div>
+      </div>
+
+      <div class="row pb-4">
+        <div class="col-md-12 text-center">
+          <h2>Modul Lengkap untuk Menjalankan Aplikasi PHP Anda</h2>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div class="row pb-4">
+            <div class="col-md-3">
+              <p>icePHP</p>
+              <p>apc</p>
+              <p>apcu</p>
+              <p>apm</p>
+            </div>
+            <div class="col-md-3">
+              <p>http</p>
+              <p>huffman</p>
+              <p>idn</p>
+              <p>igbinary</p>
+            </div>
+            <div class="col-md-3">
+              <p>nb_pdo_mysql</p>
+              <p>oauth</p>
+              <p>ocid8</p>
+              <p>odbc</p>
+            </div>
+            <div class="col-md-3">
+              <p>stats</p>
+              <p>stem</p>
+              <p>stomp</p>
+              <p>suhosin</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-12 text-center">
+          <button type="button" class="btn btn-lg btn-outline-secondary" style="border-radius: 50px;">Pilih Sekarang</button>
+        </div>
+      </div>
+
+      <div class="row pb-4">
+        <div class="col-md-6 px-0">
+          <p class="lead my-3">Linux Hosting yang stabil dengan teknologi LVE.</p>
+          <p>SuperMicro <strong>Intel Xeon 24-Cores</strong> server dengan RAM <strong>128 GB</strong> dan teknologi <strong>LVE CLoudLinux</strong> untuk stabilitas server Anda. DiIlengkapi dengan <strong>SSD</strong> untuk kecepatan <strong>MySQL</strong> dan caching. Apache load balancer berbasis LiteSpeed Technologies, <strong>CageFS</strong> security, <strong>Raid-10</strong> protection dan auto backup untuk keamanan website PHP Anda.</p>
+          <button type="button" class="btn btn-lg btn-outline-primary text-white bg-primary" style="border-radius: 50px;">Pilih Hosting Anda</button>
+        </div>
+        <div class="col-md-6 px-0">
+          <img src="assets/images/Image support.png" width="80%">
+        </div>
+      </div>
+
+    </div>
+
+    <main role="main">
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron bg-primary text-white" style="margin-bottom: 0;">
+        <div class="container">
+          <div class="row pb-4">
+            <div class="col-md-9 text-center">
+              <h2>Perlu <strong>Bantuan</strong> ? Hubungi Kami : <strong>0274-5305505</strong></h2>
+            </div>
+            <div class="col-md-3 text-center text-white">
+              <button type="button" class="btn btn-lg btn-outline-light" style="border-radius: 50px;">Live Chat</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="container-fluid bg-dark text-white footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-lg-3">
+              <h3 class="footer__column-title">Hubungi Kami</h3>
+              <p class="footer__contact">Telp: <a href="tel:+62742885822">0274-2885822</a><br>WA: <a href="https://api.whatsapp.com/send?phone=62895395186038">0895395186038</a><br>Senin - Minggu<br>24 Jam Non Stop</p>
+              <p class="footer__address">Jl. Palagan Tentara Pelajar<br>No 81 Jongkang, Sariharjo,<br>Ngaglik, Sleman<br>Daerah Istimewa Yogyakarta<br>55581</p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mt-5 mt-sm-0">
+              <h3 class="footer__column-title">Layanan</h3>
+              <ul class="footer__menu-list">
+                <li><a class="footer__menu" href="https://www.niagahoster.co.id/domain-murah">Domain</a></li>
+                <li><a class="footer__menu" href="https://www.niagahoster.co.id/hosting-indonesia">Shared Hosting</a></li>
+                <li><a class="footer__menu" href="https://www.niagahoster.co.id/cloud-hosting">Cloud Hosting</a></li>
+                <li><a class="footer__menu" href="https://www.niagahoster.co.id/cloud-vps-hosting">Cloud VPS Hosting</a></li>
+                <li><a class="footer__menu" href="https://www.niagahoster.co.id/promosi-transfer">Transfer Hosting</a></li>
+                <li><a class="footer__menu" href="https://www.niagahoster.co.id/membuat-blog-weebly">Web Builder</a></li>
+                <li><a class="footer__menu" href="https://www.niagahoster.co.id/ssl-murah">Keamanan SSL/HTTPS</a></li>
+                <li><a class="footer__menu" href="https://www.niagaweb.co.id/">Jasa Pembuatan Website</a></li>
+                <li><a class="footer__menu" href="https://www.niagahoster.co.id/afiliasi">Program Afiliasi</a></li>
+                <li><a class="footer__menu" href="https://www.niagahoster.co.id/whois">Whois</a></li>
+                <li><a class="footer__menu" href="https://status.niagahoster.co.id/" target="__blank">Niagahoster Status</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mt-5 mt-lg-0">
+              <h3 class="footer__column-title">Service Hosting</h3>
+              <ul class="footer__menu-list">
+                <li><a class="footer__menu" href="https://www.niagahoster.co.id/hosting-murah">Hosting Murah</a></li>
+                <li><a class="footer__menu" href="https://www.niagahoster.co.id/hosting-indonesia">Hosting Indonesia</a></li>
+                <li><a class="footer__menu" href="https://www.niagahoster.co.id/hosting-singapore">Hosting Singapore SG</a></li>
+                <li><a class="footer__menu" href="https://www.niagahoster.co.id/wordpress-hosting">Hosting Wordpress</a></li>
+                <li><a class="footer__menu" href="https://www.niagahoster.co.id/email-hosting">Email Hosting</a></li>
+                <li><a class="footer__menu" href="https://www.niagahoster.co.id/reseller-hosting">Reseller Hosting</a></li>
+                <li><a class="footer__menu" href="https://www.niagahoster.co.id/web-hosting-unlimited">Web Hosting Unlimited</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <h3 class="footer__column-title">Tutorial</h3>
+              <ul class="footer__menu-list">
+                <li><a class="footer__menu" href="https://www.niagahoster.co.id/ebook">Ebook Gratis</a></li>
+                <li><a class="footer__menu" href="https://www.niagahoster.co.id/kb">Knowledgebase</a></li>
+                <li><a class="footer__menu" href="https://www.niagahoster.co.id/blog">Blog</a></li>
+                <li><a class="footer__menu" href="https://www.niagahoster.co.id/pembayaran">Cara Pembayaran</a></li>
+                <li><a class="footer__menu" href="https://course.niagahoster.co.id">Niaga Course</a></li>
+              </ul>
+            </div>
+            
+          </div>
+          <div class="row mt-5">
+            
+            <div class="col-12 col-sm-6 col-lg-3 mt-5 mt-sm-0">
+              <h3 class="footer__column-title">Tentang Kami</h3>
+              <ul class="footer__menu-list">
+                <li><a class="footer__menu" href="https://www.niagahoster.co.id/about-us">Tentang</a></li>
+                <li><a class="footer__menu" href="https://www.niagahoster.co.id/promosi">Penawaran &amp; Promo Spesial</a></li>
+                <li><a class="footer__menu" href="https://www.niagahoster.co.id/poin">Niagahoster Poin</a></li>
+                <li><a class="footer__menu" href="https://www.niagahoster.co.id/karir">Karir</a></li>
+                <li><a class="footer__menu" href="https://www.niagahoster.co.id/kontak">Kontak Kami</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mt-5 mt-lg-0">
+              <h3 class="footer__column-title">Kenapa Pilih Niagahoster?</h3>
+              <ul class="footer__menu-list">
+                <li><a class="footer__menu" href="https://www.niagahoster.co.id/hosting-terbaik">Hosting Terbaik</a></li>
+                <li><a class="footer__menu" href="https://www.niagahoster.co.id/datacenter-hosting">Datacenter Hosting Terbaik</a></li>
+                <li><a class="footer__menu" href="https://www.niagahoster.co.id/hosting-indonesia#hosting-price">Domain Gratis</a></li>
+                <li><a class="footer__menu" href="https://www.niagahoster.co.id/domain-gratis">Bagi-bagi Domain Gratis</a></li>
+                <li><a class="footer__menu" href="https://www.niagahoster.co.id/hosting-gratis">Bagi-bagi Hosting Gratis</a></li>
+                <li><a class="footer__menu" href="https://www.niagahoster.co.id/review">Review Pelanggan</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mt-5 mt-lg-0">
+              <h3 class="footer__column-title">Newsletter</h3>
+              <form id="newsletter" class="footer__newsletter">
+                <label for="newsletter-email" class="visuallyhidden">Berlangganan Email </label>
+                <input id="newsletter-email" class="footer__newsletter-input" name="email" type="text" placeholder="youremail.gmail.com">
+                <div class="footer__newsletter-btn-wrapper">
+                  <a id="newsletter-btn" href="javascript:void(0)" class="footer__newsletter-btn">Berlangganan</a>
+                </div>
+              </form>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mt-5 mt-lg-0">
+              <ul class="footer__social-icon-list">
+                
+              </ul>
+            </div>
+          </div>
+          <div class="row pb-4">
+            <div class="col-md-8 text-left">              
+              <p>Copyright ©2016 Niagahoster | Hosting powered by PHP7, CloudLinux, CloudFlare, BitNinja and DC DCI-Indonesia. Cloud VPS Murah powered by Webuzo Softaculous, Intel SSD and cloud computing technology</p>
+            </div>
+            <div class="col-md-4 text-right">
+              <p class="float-right"><a href="#">Syarat dan Ketentuan | Kebijakan Privasi</a></p>
+              
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+    </main>
+    
+  </body>
+</html>
