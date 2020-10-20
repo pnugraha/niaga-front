@@ -1,0 +1,81 @@
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+.justify-content-end .text-muted{
+  padding-left: 10px;
+}
+.row .col-md-12 h2{
+  padding: 30px 0 30px 0 !important;
+}
+.pt-1 > a.text-muted{
+  font-size: 12px;
+}
+.col-md-6 > p.lead{
+  font-size: 30px;
+  font-weight: 500;
+  color: #868686;
+  line-height: 35px;
+}
+ul {
+  list-style-image: url('../../icons/check-circle-fill.svg');
+  padding-left: 20px;
+}
+ul li {
+  line-height: 30px;
+}
+big{
+  font-size: 50px;
+}
+bg-primary > big {
+  color: white !important;
+}
+.card-body > button {
+  font-weight: bold;
+  font-size: 16px;
+  border: 3px solid;
+}
+.card-deck .card {
+  margin: 0;
+}
+.btn{
+  border: 3px solid;
+}
+.nb{
+  font-size: 12px;
+  padding-bottom: 20px;
+  display: block;
+}
+.footer {
+    font-size: 13px;
+    padding: 100px 5% 24px;
+    background: #333;
+    color: #c4c4c4;
+}
+.footer .footer__column-title {
+    font-family: NunitoSansBold,sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.footer ul.footer__menu-list {
+    list-style-image: none;
+    list-style-type: none;
+    padding-left: 0px;
+}
+.footer ul.footer__menu-list li {
+    line-height: 20px !important;
+}
+.footer ul.footer__menu-list li a {
+    color: white;
+}
